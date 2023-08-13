@@ -5,7 +5,7 @@ This could be used for upscaling generated images, when the original prompts sho
 
 The `Load Image with metadata` is thought as a replacement for the default `Load Image` node.
 
-<img src="./workflow/screenshot.jpg" alt="screenshot" height="500"/>
+<img src="./workflow/screenshot.jpg" alt="screenshot" max-height="500"/>
 
 * positive prompt (STRING)
 * negative prompt (STRING)
