@@ -18,8 +18,8 @@ class LoadImageWithMetadata:
 
     CATEGORY = "image"
 
-    RETURN_TYPES = ("IMAGE", "MASK", "STRING", "STRING", "INT", "STRING", "FLOAT", "INT")
-    RETURN_NAMES = ("image", "mask", "positive", "negative", "seed", "size", "cfg", "steps")
+    RETURN_TYPES = ("IMAGE", "MASK", "STRING", "STRING", "INT", "INT", "INT", "FLOAT", "INT")
+    RETURN_NAMES = ("image", "mask", "positive", "negative", "seed", "width","height", "cfg", "steps")
     FUNCTION = "load_image"
 
     def load_image(self, image):
@@ -42,8 +42,11 @@ class LoadImageWithMetadata:
         cfg = float(reader.parameter["cfg"])
         steps = int(reader.parameter["steps"])
         size = reader.parameter["size"]
+        sizeSplit = size.split("x")
+        width = int(sizeSplit[0])
+        height = int(sizeSplit[1])
         
-        return (image, mask, reader.positive, reader.negative, seed, size, cfg, steps)
+        return (image, mask, reader.positive, reader.negative, seed, width, height, cfg, steps)
 
     @classmethod
     def IS_CHANGED(s, image):

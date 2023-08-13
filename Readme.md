@@ -1,7 +1,7 @@
 # Load Image with metadata
 
-A custom node for comfy ui to read generation data from images (only png for now). 
-This could be used for upscaling generated images, when the original prompts should be used.
+A custom node for comfy ui to read generation data from images (prompt, seed, size...). 
+This could be used when upscaling generated images to use the original prompt and seed.
 
 The `Load Image with metadata` is thought as a replacement for the default `Load Image` node.
 
