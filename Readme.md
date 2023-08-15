@@ -14,6 +14,13 @@ The `Load Image with metadata` is thought as a replacement for the default `Load
 * cfg (FLOAT)
 * steps (INT)
 
+# Known Issues
+
+**Comfy UI Images**
+
+As comfy does not store the prompt as actual metadata in the image, the node graph needs to be traversed to find the actual text prompts and other data.
+At the moment complex workflows tend to fail resolving the metadata. This is even more complicated with all the custom nodes and different input/output names for text, prompts and conditionings.
+
 # Hot to use
 
 Find the node via Search `LoadImageWithMetadata` or under `image/LoadImageWithMetadata` in the node dropdown.
