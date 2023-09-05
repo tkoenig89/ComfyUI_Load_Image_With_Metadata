@@ -3,7 +3,7 @@ import os
 import hashlib
 import numpy as np
 import folder_paths
-from .util.image_data_reader import ImageDataReader
+from .sd_prompt_reader.image_data_reader import ImageDataReader
 
 from PIL import Image, ImageOps
 
