@@ -14,6 +14,17 @@ The `Load Image with metadata` is thought as a replacement for the default `Load
 * cfg (FLOAT)
 * steps (INT)
 
+# Supported Generators:
+
+* A1111
+* EasyDiffusion
+* InvokeAI
+* NovelAI
+* ComfyUI
+* DrawThings
+* SwarmUI
+* Fooocus
+
 # Known Issues
 
 **Comfy UI Images**
