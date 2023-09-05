@@ -37,6 +37,8 @@ class LoadImageWithMetadata:
         
         reader = ImageDataReader(image_path)
         #reader.parameter: {'model': 'abc', 'sampler': 'DPM++ 2M Karras', 'seed': '2706265200', 'cfg': '7', 'steps': '25', 'size': '512x512'}
+        if(reader.tool == ''):
+            raise ValueError('Unable to read generation metadata from image!')
 
         seed = int(reader.parameter["seed"])
         cfg = float(reader.parameter["cfg"])
