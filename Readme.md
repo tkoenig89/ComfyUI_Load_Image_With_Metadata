@@ -1,3 +1,10 @@
+# DISCLAIMER - DISCONTINUED
+
+Please use the [SD Prompt Reader Node](https://github.com/receyuki/comfyui-prompt-reader-node) from now on.
+
+As I made this node, while there was no solution to load metadata in comfy, there is now a nice and comprehensive implementation by the original author of the [SD Prompt Reader](https://github.com/receyuki/stable-diffusion-prompt-reader).
+This one also provides a node to save metadata which is much better than anything i tried for this as well. As i don't see any sense in wasting resources on multiple implemetations this repository will not be continued from now on.
+
 # Load Image with metadata
 
 A custom node for comfy ui to read generation data from images (prompt, seed, size...). 
